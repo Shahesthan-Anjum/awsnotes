@@ -1,7 +1,14 @@
 SQS IN AWS
 
+you can use the “aws sqs delete-message-batch” command to delete up to 10 messages at a time.
+cost:>>>>>>>.... but they typically fall into one of three categories: data transfer, request charges, and storage charges.
+Data transfer costs are incurred when data is transferred in or out of SQS,
+while request charges are incurred for each API request made to SQS. 
+Finally, storage charges are incurred for each message that is stored in SQS.
+
 
 1
+
 +
 Amazon Simple Queue Service (SQS) is a fully managed message queuing service that makes it easy to decouple and scale microservices, distributed systems, and serverless applications. SQS offers two types of queues: standard queues and FIFO (First-In-First-Out) queues.
 
