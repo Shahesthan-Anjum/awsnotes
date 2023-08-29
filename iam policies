@@ -1,1 +1,21 @@
+IAM MFA-multifactor authentication
+In aws account first u login with with ur email id-that is ur root user
+the root user has full permissions and it is best to avoid and enable mfa
+the root user has multiple individual users,and we can create 5000 accounts and it dont have any permissions by default(arn-amazon resourse name)
+the individual users has can login through three ways cli,management console and API
+  ``````for management we wil ise username and password for other two we wil use access key
+IAM groups is collection of users and we can create three types of group 
+  1-Admin group 2-Development group and 3-Operational group and one user can be member of 10 groups
+ we are creating poloicies beacuse we have 3 group and for that we need different permisions for different grup 
+thats y we group them in different groups and then apply policies for them and give permissions to perform their differnt jobs role
 
+An IAM role is an identity that has specific permissions
+    roles are assumed by users ,applications and their services
+
+Policies are the documents that defines the permission and writtion in json(javascript object notation)
+two types of policies=
+    1,-Administration access-------it identity based policies---its applied to identities--it is applied to users,groups,roles
+    2,-Bucket policy---it is resource based identity--it is directly applied to resources--it is applied to s3 bucket n dynomodb
+          resource is an entity that u create in aws
+
+all permissions are denied by default
